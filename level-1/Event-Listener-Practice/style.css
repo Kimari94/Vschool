@@ -1,0 +1,11 @@
+#box {
+    border: solid;
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 35%;
+}
+
+body {
+    height: 950px;
+}
