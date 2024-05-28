@@ -1,0 +1,206 @@
+body{    
+    background-image: url(https://st.depositphotos.com/1909225/4239/i/600/depositphotos_42395701-stock-photo-old-inn-with-colorful-flowers.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    color: white;
+ }
+
+nav{
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    height: 5vh;
+    border: dashed black;
+    font-size: large;
+    font-weight: bold;
+}
+
+.navLeft{
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.navCenter{
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navItem{
+    color: white;
+}
+
+.account{
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+#welcome{ 
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    grid-column: 3 / 6; 
+    grid-row: 1 / 2;   
+    font-size: larger;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    font-size: 2em;
+    background-color: brown;
+    border-radius: 10px;
+    margin: 20px 70px;
+    padding: 0px;
+    line-height: 60px;
+    border-style: groove;
+}
+
+#subtext{
+    grid-column: 3 / 6;
+    grid-row: 2 / 3;
+    justify-content: center;
+    text-align: center;
+    background-color: burlywood;
+    height: 60px;
+    border-radius: 10px;
+    margin: 0 70px;
+    border-style: groove;
+}
+
+#paragraph{
+    grid-column: 2/7;
+    grid-row: 3/4;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    background-color: rgb(182, 141, 18);
+    border-radius: 17px;
+    height: 20vh;
+    padding: 0px;
+    margin: 0px;
+    height: fit-content;
+    border-style: groove;
+
+}
+
+.newsletter {
+    grid-column: 4 / 5; /* Span only one column */
+    grid-row: 4/ 5; /* Positioned directly under the paragraph, occupying the same grid area */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 20px;
+    background-color: rgb(215, 63, 13);
+    border-radius: 10px;
+    color: black;
+    height: 120px;
+    border-style: groove;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column-; /* Stack elements vertically */
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter label {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.newsletter input,
+.newsletter button {
+    margin: 2px; /* Adjust spacing between input and button */
+}
+
+.newsletter button {
+    height: 100%;
+    width: 100px;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+@media (max-width: 1200px) {
+    nav{
+        font-size: 14px;
+        margin-right: auto;
+        display: flex;
+        justify-content: flex-start;
+        flex-grow: 0;
+    }
+
+    .navLeft{
+        display: none;
+    }
+
+    .account{
+        flex-grow: 0;
+        align-items: center;
+        margin: 0 auto;
+        gap: 10px;
+    }
+
+    .navCenter{
+        gap: 15px;
+        align-items: start;
+        justify-content: flex-start;
+    }
+
+    #welcome{
+        font-size: 20px;
+        height: 15vh;
+    }
+
+    #subtext{
+        font-size: 15px;
+        height: fit-content;
+       
+    }
+
+    #welcome, #subtext, #paragraph, .newsletter, footer{
+        margin: 0 auto;
+        max-width: 80vw;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0px;
+        height: fit-content;
+        max-height: 50vh;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+    
+    .newsletter{
+        grid-row: 4/5;
+        margin-top: 30px;
+    }
+}
+
