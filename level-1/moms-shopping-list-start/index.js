@@ -20,6 +20,7 @@ submit.addEventListener('click', function(event){
         removeButton[i].style.margin = '15px 50px ';
     
     }
+    
 });
 
 /*event listener for when the remove button is clicked. This will remove the corrosponding list item that was created*/
