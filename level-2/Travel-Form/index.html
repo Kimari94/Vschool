@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form id="travelForm">
+        <div id="enterFirstName">
+            <label id="firstNameBox" for="firstName">First name:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Enter your first name" required>
+        </div>
+        <div id="enterLastName">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+        </div>
+        <div id="enterAge">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="30" required> 
+        </div>
+       <div id="gender">
+            
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other" required>
+            <label for="other">Other</label>
+            
+        </div>
+        <div id="selectLocation">
+            <label for="location">Location?</label>
+            <select name="location" id="location">
+                <option value="earth">Earth</option>
+                <option value="venus">Venus</option>
+                <option value="mars">Mars</option>
+            </select>
+        </div>
+        <div id="checkbox">
+             <label for="vegan">Vegan</label>
+             <input type="checkbox" name="diet" id="vegan" value="Vegan">
+             <label for="kosher">Kosher</label>
+             <input type="checkbox" name="diet" id="kosher" value="Kosher"> 
+             <label for="carnivore">Carnivor</label>
+             <input type="checkbox" name="diet" id="carnivore" value="Carnivore">        
+        </div>
+        <div id="submit">
+            <button type="submit" class="submit" id="submit">Submit</button>
+        </div>
+    </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

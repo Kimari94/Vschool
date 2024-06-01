@@ -1,0 +1,84 @@
+body{
+    background-color: cornflowerblue;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    font-size: 40px;
+    flex-direction: column;
+
+}
+
+button{
+    height: 30px;
+    width: 100px;
+}
+
+input{
+    margin: 0 auto;
+    margin-bottom: 40px;
+    height: 30px;
+}
+
+select{
+    height: 30px;
+    margin-top: 30px;
+}
+
+form{
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+    border-style:outset;
+    padding: 20px;
+    background-color: azure;
+}
+
+label{
+    width: fit-content;
+}
+
+#gender {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+}
+
+#gender label {
+    margin-right: auto; 
+}
+
+#gender input[type="radio"] {
+    margin-right: 5px; 
+    align-self:center; 
+}
+
+
+
+
+#location{
+    margin: 20px;
+}
+
+#firstName{
+    margin-bottom: 20px;
+    align-items: center;
+    
+}
+
+#lastName{
+    margin-bottom: 20px;
+}
+
+#submit{
+    text-align: center;
+}
+
+select{
+    width: 100px;
+    margin-right: 5px;
+    text-align: end;
+    
+}
