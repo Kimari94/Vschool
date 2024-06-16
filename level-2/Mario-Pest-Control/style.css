@@ -1,0 +1,147 @@
+body{
+    background-image: url(https://t3.ftcdn.net/jpg/01/12/44/98/360_F_112449880_Nse0T8S25Mb2cxSk9fHPLHh7Jc9JRwHe.webp)
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 24vh);
+}
+
+.baddie1{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    border: solid 15px;
+    border-color: black;
+    border-style: inset;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGAq0G_lqa16m7srQnlVzrGwQl3ANEYVjtn6HXawmbF9ETPWAyT7AErDhK2iPusvR3Cw&usqp=CAU);
+    margin: 3px;
+    grid-row: 1/3;
+}
+
+.baddie2{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    border: solid 15px;
+    border-color: black;
+    background-color: silver;
+    border-style: inset;
+    margin: 3px;
+    grid-row: 1/3;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOnk87KKL_cqBnFOK5xvVPCIiiBJH4nqPPhA&s);
+}
+
+.baddie3{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    border: solid 15px;
+    border-color: black;
+    border-style: inset;
+    background-color: silver;
+    margin: 3px;
+    grid-row: 1/3;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ8XDS-nVNas2sGPgcNMm7yepE7lmsnU-MxQ&s);
+}
+
+.totalCoins{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    border: solid 15px;
+    border-style: inset;
+    border-color: black;
+    background-color: aqua;
+    grid-column: 2/3;
+    grid-row: 3/5;
+    background-image: url(https://static.tvtropes.org/pmwiki/pub/images/koopatroop_426.jpg);
+}
+
+#baddie1form{
+    height: fit-content;
+    text-align: center;
+    grid-row-end: 7;
+    margin: 10px;
+    border: solid blue;
+    background-color: sandybrown;
+    height: auto;
+}
+
+#label1{
+    font-weight: 900;
+    font-size: 30px;
+    background-color: aqua;
+}
+
+#total1{
+    height: 30px;
+}
+
+#baddie2form{
+    height: fit-content;
+    text-align: center;
+    grid-row-end: 7;
+    margin: 10px;
+    border: solid blue;
+    background-color: sandybrown;
+    height: auto;
+}
+
+#label2{
+    font-weight: bolder;
+    font-size: 30px;
+    background-color: aqua;
+}
+
+#total2{
+    height: 30px;
+}
+
+#baddie3form{
+    height: fit-content;
+    text-align: center;
+    grid-row-end: 7;
+    margin: 10px;
+    border: solid blue;
+    background-color: sandybrown;
+    height: auto;
+}
+
+#label3{
+    font-weight: bolder;
+    font-size: larger;
+    font-size: 30px;
+    background-color: aqua;
+}
+
+#total3{
+    height: 30px;
+}
+
+button{
+    min-height: 35px;
+    margin-bottom: 5px;
+}
+
+#label4{
+    font-weight: bolder;
+    font-size: larger;
+    background-color: seashell;
+    
+}
+
+#totalCoinsForm{
+    height: fit-content;
+    text-align: center;
+    grid-row-end: 7;
+    margin: 10px;
+    border: solid blue;
+    background-color: aqua;
+    height: auto;
+}
+
+#calcCoins{
+    min-width: 200px;
+    max-width: 500px;
+    min-height: 50px;
+    font-weight: 900;
+    font-size: 20px;
+}
