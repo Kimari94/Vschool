@@ -1,0 +1,110 @@
+{
+    "Menu": [
+        {
+            "Appetizers": [
+                {
+                    "Name": "Mozzerella Sticks",
+                    "Ingredients": [
+                        "Deep Fried Breading",
+                        "Mozzerella Cheese"
+                    ],
+                    "Description": "Breaded strings of Mozzerella Cheese deep fried in oil"
+                },
+                {
+                    "Name": "Queso and Chips",
+                    "Ingredients": [
+                        "Dipping Cheese, Baked Tortilla Chips"
+                    ],
+                    "Description": "Delicious Melted Dipping Cheese with Baked Tortilla Chips"
+                }
+            ],
+            "Cold Sandwiches": [
+                {
+                    "Name": "Italian Sub",
+                    "Ingredients": [
+                        "Pepperoni, Salami, Cheese, bread"
+                    ],
+                    "Description": "Delicious Classic Italian Sub"
+                },
+                {
+                    "Name": "Cold Tuna Sandwich",
+                    "Ingredients": [
+                        "Tuna",
+                        "Salt",
+                        "Pepper",
+                        "Mayonaise",
+                        "Bread"
+                    ],
+                    "Description": "Delicious Cold Tuna Sandwich"
+                }
+            ],
+            "Hot Sandwiches": [
+                {
+                    "Name": "Queso and Chips",
+                    "Ingredients": [
+                        "Bread",
+                        "Chicken",
+                        "Bacon",
+                        "Ranch"
+                    ],
+                    "Description": "Delicious Sub with Chicken, Bacon, and Ranch toasted together."
+                },
+                {
+                    "Name": "Scrambled Egg Sandwich",
+                    "Ingredients": [
+                        "Scrambled Eggs",
+                        "Cheese",
+                        "Salt",
+                        "Pepper"
+                    ],
+                    "Description": [
+                        "Delicious Scrambled Eggs with Melted Cheese. Seasoned with Salt and Pepper"
+                    ]
+                }
+            ],
+            "Desserts": [
+                {
+                    "Name": "Banana Split",
+                    "Ingredients": [
+                        "Bananas",
+                        "Vanilla Ice Cream",
+                        "Strawberry Syrup"
+                    ],
+                    "Description": [
+                        "Delicious Banana Split with Strawberry Syrup topping"
+                    ]
+                },
+                {
+                    "Name": "Chocolate Ice Cream",
+                    "Ingredients": [
+                        "Chocolate Ice Cream"
+                    ],
+                    "Description": [
+                        "Delicious Chocolate Ice Cream"
+                    ]
+                }
+            ],
+            "Drinks": [
+                {
+                    "Name": "Flavored Soda",
+                    "Ingredients": [
+                        "Carbonated Water",
+                        "Flavored Syrup"
+                    ],
+                    "Description": [
+                        "Delicious Refreshing Soda"
+                    ]
+                },
+                {
+                    "Name": "Water",
+                    "Ingredients": [
+                        "Water"
+                    ],
+                    "Description": [
+                        "Water"
+                    ]
+                }
+            ]
+        }
+    ]
+}
