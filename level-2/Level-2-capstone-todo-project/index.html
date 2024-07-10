@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class = 'navbar'>
+            <h3>Level 2 Capstone</h3>
+            <h3 id = 'title'>Axios Todo List</h3>
+            <h3>David Bowen</h3>
+        </nav>
+    </header>
+    
+    <div class = 'headline'>
+        <h1>"Organize, Prioritize, Conquer"</h1>
+    </div>
+
+   
+    <form name="form" class="addToDo">
+        <h1>Add ToDo Form</h1>
+        <input class="input" placeholder="title" type="text" name="title">
+        <input class="input" placeholder="price" type="number" name="price">
+        <input class="input" placeholder="description" type="text" name="description">
+        <input class="input" placeholder="image url" type="text" name="imgUrl">
+        <button id="submit-btn">Submit</button>
+    </form>
+
+
+    <div class = 'toDoList'>
+        <div class = 'toDoItem'>
+        <h1 class="toDoItemTitle">Mow the lawn</h1>
+        <p class="toDoItemDetails">Pay the Landscaper</p>
+        <p class="toDoItemDetails">$50</p>
+        <img src="https://images.unsplash.com/photo-1590820292118-e256c3ac2676?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80" alt="lawnimg" class="toDoItemImg">
+        <div class = 'toDoButton'>
+            <button class="toDoButtons">Delete</button>
+            <button class="toDoButtons">Edit</button> 
+        </div>
+            <label>Completed</label>
+            <input type="checkbox" class="checkbox">
+        </div>
+    </div>
+    
+    
+    <footer>
+        <img src="https://level2capstone.netlify.app/images/facebook2.png" alt="facebook">
+        <img src="https://level2capstone.netlify.app/images/403-instagram.png" alt="instagram">
+        <img src="https://level2capstone.netlify.app/images/407-twitter.png" alt="twitter">
+        <img src="https://level2capstone.netlify.app/images/433-github.png" alt="reddit">
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
