@@ -1,0 +1,185 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:#F8F8FF;
+}
+
+a:hover{
+    color: aqua;
+    
+}
+
+button:hover{
+   
+    background-color: rgb(20, 110, 140)
+}
+
+header{
+    margin: 0;
+    height: 60vh;
+    background-image: url(https://wallpapers.com/images/hd/dark-workspace-blogging-backdrop-acqoss4ry3i7ijyl.jpg);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 3%;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+    
+ 
+
+.start{
+    margin-left: 15%;
+    margin-top: 1%;
+    color: #fff;
+    font-size: 20px;
+}
+
+.navBar{
+    margin-right: 15%;
+    margin-top: 1%;
+    justify-content: space-between;
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.link{
+    color: #fff;
+    text-decoration: none;
+}
+
+.cleanBlog{
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    margin-top: 7%;
+    font-size: 100px;
+}
+
+.blogSubtext{
+    color: #fff;
+    text-align: center;
+    margin-top: 1px;
+    font-size: 25px;
+}
+
+.blogList{
+    border-bottom: solid 1px rgb(208, 204, 204);
+    margin-bottom: 0%;
+    letter-spacing: 1px;
+}
+
+.blogTitle{
+    margin-bottom: 0px;
+    font-weight:bolder;
+    font-size: 40px;
+    padding: 0;
+    line-height: 2.8rem;
+}
+
+.blogTitleLink{
+    color: black;
+    text-decoration: none;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.subtitle{
+    font-size: 25px;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 100;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.authorLink{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.authorDate{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+
+.blog{
+  padding-left: 30%;
+  padding-right: 30%
+}
+
+button{
+    height: 50px;
+    width: 175px;
+    background-color: #0085A1;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 74%;
+    transition: background-color 0.25s ease-in-out;
+}
+
+footer{
+    border-top: solid 1px rgb(204, 201, 201);
+}
+
+.socialMedia{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 2%;
+
+}
+
+
+.twitter{
+    height: 60px;
+    border-radius: 100px;
+}
+
+.facebook{
+    height: 60px;
+    border-radius: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.reddit{
+    height: 60px;
+    border-radius: 50px;
+}
+
+.copyright{
+    text-align: center;
+    color: grey;
+    font-style: italic;
+}
