@@ -1,0 +1,48 @@
+body{
+  width: 100vw;
+  margin: 0;
+  padding: 0%;
+  background-color: rgb(45, 42, 42);
+}
+
+#root{
+  margin-top: 0;
+}
+
+header{
+  display: flex;
+  width: 100vw;
+  border-bottom: 1px solid #fff;
+  height: 10vh;
+  margin-top: 0;
+  align-items: center;
+
+}
+
+h1{
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 0;
+  align-items: center;
+  color: aqua;
+}
+
+.cards{
+  border: solid 1px #fff;
+  width: 25%;
+  background-color: seagreen;
+  text-align: center;
+  justify-content: center;
+  height: 20vh;
+}
+
+.cardContainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin-top: 5%;
+  justify-content: center;
+}
+  
+
+
