@@ -65,8 +65,10 @@ export default function DiceBox(){
                  onClick={handleDieClick}   />
             ))}
         </div>
+        <div className="buttons">
         <button onClick={diceRoll}>Roll Again!</button>
         <button onClick={resetDice}>Reset Dice!</button>
+        </div>
         </>
     )
 }
