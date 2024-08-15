@@ -42,10 +42,10 @@ export default function RandomMovie(props){
         <div>
             <h1>{movies[movieIndex].title}</h1>
             { showDetails && (
-            <>
+            <div>
             <p>Descripton: {movies[movieIndex].description}</p>
             <p>Rating: {movies[movieIndex].rating}</p>
-            </>
+            </div>
             )}
             <button onClick={() => nextMovie(-1)}>Previous Movie</button>
             <button onClick={() => nextMovie(+1)}>Next Movie</button>

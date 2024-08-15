@@ -32,3 +32,10 @@
   color: black;
   border: solid, black, 1px;
 }
+
+.favMovies{
+  border: 2px solid black;
+  height: fit-content;
+  width: 50vw;
+  color: blue
+}

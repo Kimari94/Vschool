@@ -3,6 +3,7 @@ import './App.css'
 import RandomMovie from './Components/RandomMovie'
 import Navbar from './Components/navbar';
 import FavoriteMovies from './Components/FavoriteMovies';
+import Form from './Components/Form';
 
 function App() {
   
@@ -29,6 +30,7 @@ function App() {
     <div className={`${theme} main`}>
       <Navbar toggleTheme = {toggleTheme} />
       <RandomMovie addMovies={addMovies} />
+      <Form addMovies={addMovies} />
       <FavoriteMovies favMovies={favMovies} />
     </div>
   )

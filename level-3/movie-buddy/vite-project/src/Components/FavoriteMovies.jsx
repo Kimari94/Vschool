@@ -17,7 +17,7 @@ export default function FavoriteMovies(props){
 
     const movieElements = favMovies.map((movie, i) => {
         return (
-            <div key={i} className={movieStyles}>
+            <div key={i} className={`${movieStyles} favMovies`} >
                 <h1>{movie.title}</h1>
                 <h3> Description: {movie.description} </h3>
                 <p> Rating :{movie.rating} </p>
@@ -28,7 +28,7 @@ export default function FavoriteMovies(props){
 
     return (
         <div >
-        <h1>Favorite Movies</h1>
+        <h2>Favorite Movies</h2>
         {movieElements}
         </div>
     )
