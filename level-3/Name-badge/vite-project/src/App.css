@@ -1,0 +1,50 @@
+html{
+  background-color: beige;
+}
+
+.badgeForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  border: solid 3px black;
+  padding: 15px;
+  background-color: teal;
+}
+
+.badgeForm label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.badgeForm input{
+  margin-left: 30px; /* Add space between label text and input */
+}
+
+.badges{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  width: 100vw;
+  margin-left: 14vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  background-color: bisque;
+}
+
+.badgeContainer{
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+
+}
