@@ -1,40 +1,53 @@
-import { useState } from "react"
-import memesData from "../memesData";
+import { useEffect, useState } from "react"
+import axios from 'axios'
 
 
 export default function Meme() {
 
-    const [meme, setMeme] = useState({
-        TopText: '',
-        BottomText: '',
-        randomImage: 'http://i.imgflip.com/1bij.jpg'
-    })
 
-    const [allMemeImages, setAllMemeImages] = useState(memesData)
+    const [meme, setMeme] = useState('')
+
     const [bottomText, setBottomText] = useState('')
     const [topText, setTopText] = useState('')
 
-    function getMeme() {
+    const getRandMeme = async () => {
+        try {
+            const response = await axios.get('https://api.imgflip.com/get_memes')
 
-        const memesArray = memesData.data.memes;
-        const randomNumber = Math.floor(Math.random() * memesArray.length)
-        setMeme({
-            ...meme,
-            randomImage: memesArray[randomNumber].url
-        })
+            const randomMemeData = Math.floor(Math.random() * response.data.data.memes.length);
+            const memeData = response.data.data.memes[randomMemeData].url
+            setMeme(memeData)
+        }
+        catch (err) {
+            console.log(err)
+        }
     }
 
-     function handleBottomText(e){
-        e.preventDefault();
+
+
+    useEffect(() => {
+        getRandMeme();
+    }, [])
+
+
+   
+    function handleBottomText(e) {
         setBottomText(e.target.value)
+        
     }
     console.log(bottomText)
 
-     function handleTopText(e){
-        e.preventDefault();
+
+
+    function handleTopText(e) {
         setTopText(e.target.value)
+      
     }
     console.log(topText)
+
+
+    
+    
 
     return (
         <div className='memeText'>
@@ -50,13 +63,13 @@ export default function Meme() {
                 </div>
             </div>
             <div>
-                <button className="memeButton" onClick={getMeme}>Generate New Meme</button>
+                <button className="memeButton" onClick={getRandMeme}>Generate New Meme</button>
             </div>
 
             <div className="memeBox">
-            <img className="memeImage" src={meme.randomImage} alt="meme" />
-            <div className="topText">{topText}</div>
-            <div className="bottomText">{bottomText}</div>
+                <img className="memeImage" src={meme} alt="meme" />
+                <div className="topText">{topText}</div>
+                <div className="bottomText">{bottomText}</div>
             </div>
 
         </div>

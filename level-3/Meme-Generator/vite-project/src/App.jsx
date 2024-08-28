@@ -1,7 +1,7 @@
 import './App.css'
 import Header from './props/Header'
 import Meme from './props/Meme'
-import memesData from './memesData'
+import Favorites from './props/Favorites'
 
 function App() {
   
