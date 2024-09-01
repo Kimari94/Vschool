@@ -135,3 +135,33 @@ button{
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   word-wrap: break-word;
 }
+
+.SAVEDtopText, .SAVEDbottomText{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 90%;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  word-wrap: break-word;
+}
+
+.SAVEDtopText {
+ top: 10px;
+}
+
+.SAVEDbottomText {
+  bottom: 70px; 
+}
+
+.SAVEDmeme{
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+    

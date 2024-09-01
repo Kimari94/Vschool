@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import axios from 'axios'
+import Favorites from './Favorites'
 
 
 export default function Meme() {
@@ -16,11 +17,14 @@ export default function Meme() {
 
             const randomMemeData = Math.floor(Math.random() * response.data.data.memes.length);
             const memeData = response.data.data.memes[randomMemeData].url
-            setMeme(memeData)
+            setMeme(memeData);
+            setTopText('');
+            setBottomText('');
         }
         catch (err) {
-            console.log(err)
+            console.log(err);
         }
+       
     }
 
 
@@ -55,11 +59,19 @@ export default function Meme() {
             <div className='inputs'>
                 <div className='formGroup'>
                     <label htmlFor="topInput" className='label'>Top Text</label>
-                    <input type="text" className="topInput" id="topText" onChange={handleTopText} />
+                    <input type="text" 
+                    className="topInput" 
+                    id="topText" 
+                    value={topText}
+                    onChange={handleTopText} />
                 </div>
                 <div className='formGroup'>
                     <label htmlFor="bottomText" className='label'>Bottom Text</label>
-                    <input type="text" className="bottomInput" id="bottomText" onChange={handleBottomText} />
+                    <input type="text"
+                    className="bottomInput" 
+                    id="bottomText"
+                    value={bottomText} 
+                    onChange={handleBottomText} />
                 </div>
             </div>
             <div>
@@ -71,7 +83,7 @@ export default function Meme() {
                 <div className="topText">{topText}</div>
                 <div className="bottomText">{bottomText}</div>
             </div>
-
+            <Favorites topText = {topText} bottomText = {bottomText} meme = {meme}/>
         </div>
     )
 }
